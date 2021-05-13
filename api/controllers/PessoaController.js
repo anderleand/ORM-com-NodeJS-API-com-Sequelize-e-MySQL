@@ -1,6 +1,7 @@
 const database = require('../models'); //Não há a necessidade de colocar o 'index.js' pq por padrão o JavaScript já procura um 'index.js' em models.
 
 class PessoaController {
+    
     static async pegaTodasAsPessoas(req, res) {
         try {
             const todasAsPessoas = await database.Pessoas.findAll();
